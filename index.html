@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="15p">
+<head>
+    <meta charset="UTF-8">
+    <title>Pyatnashki</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="pyatnashki.css">
+</head>
+<body ng-controller="appController" ng-cloa>
+
+    <h1 class="container table col-md-4 col-md-offset-4">
+
+        <output class = "col-md-3" ng-repeat="cell in model.cells">
+            <output ng-if="cell == 0" class="block"></output>
+            <output ng-if="cell != 0" class="block feel" ng-click="model.touch($event)">{{ cell }}</output>
+        </output>
+
+    </h1>
+
+<output class="container btn-container">
+    <output class="btn btn-default" ng-click="model.shuffle(model.cells)">Shuffle</output><br>
+    <output class="btn btn-default" ng-click="model.triggerWin()">Press this to WIN</output>
+</output>
+
+<script src="pyantashki.js"></script>
+</body>
+</html>
