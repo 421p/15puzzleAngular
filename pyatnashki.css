@@ -1,0 +1,25 @@
+.block{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    margin: 2px;
+    text-align: center;
+    padding-top: 42px;
+}
+.feel{
+    background-color: #58146c;
+    color: white;
+}
+.table{
+    margin-top: 40px;
+    width: 500px;
+    border: solid black 1px;
+    padding: 5px;
+}
+.btn-container{
+    position: absolute;
+    margin: 20px;
+}
+.btn{
+    margin: 5px;
+}
